@@ -13,8 +13,6 @@ function preload() {
 
   ImgCrop = loadImage("image.jpg");
   song = loadSound("song.mp3");
-
-  userStartAudio();
 }
 
 function setup() {
@@ -33,6 +31,7 @@ function setup() {
   fft = new p5.FFT();
 
   //initialize the song
+  userStartAudio();
   song.play();
 }
 
